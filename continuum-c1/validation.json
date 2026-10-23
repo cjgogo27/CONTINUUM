@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-24",
+  "scope": "File structure, finite geometry, UI behavior and layout only. No physical, electrical or medical validation.",
+  "glb": [
+    {
+      "file": "continuum-c1-assembly.glb",
+      "bytes": 2044232,
+      "meshes": 143,
+      "nodes": 176,
+      "materials": 143,
+      "issues": []
+    },
+    {
+      "file": "continuum-c1-exploded.glb",
+      "bytes": 2045992,
+      "meshes": 143,
+      "nodes": 176,
+      "materials": 143,
+      "issues": []
+    }
+  ],
+  "obj": {
+    "vertices": 56597,
+    "normals": 56597,
+    "triangles": 27992,
+    "invalidIndices": false
+  },
+  "interface": {
+    "modes": 5,
+    "mechanismSteps": 6,
+    "pageErrors": [],
+    "narrowLayout": {
+      "documentWidth": 328,
+      "scrollWidth": 328,
+      "sceneWidth": 328,
+      "canvasWidth": 328
+    },
+    "partSelectionFromMechanism": "H08 opens xray and shows AFE/ADC details"
+  },
+  "geometry": {
+    "parts": 30,
+    "meshes": 143,
+    "triangles": 27992,
+    "invalid": [],
+    "headsetMm": [
+      225.10000002384186,
+      121.5,
+      284.7
+    ],
+    "dockMm": [
+      240,
+      118,
+      196.7
+    ]
+  }
+}

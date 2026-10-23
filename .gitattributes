@@ -1,0 +1,12 @@
+* text=auto
+*.md text eol=lf
+*.js text eol=lf
+*.html text eol=lf
+*.json text eol=lf
+*.txt text eol=lf
+*.obj text eol=lf
+*.mtl text eol=lf
+*.glb binary
+*.png binary
+*.zip binary
+.gitattributes text eol=lf
