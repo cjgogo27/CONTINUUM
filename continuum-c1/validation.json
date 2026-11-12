@@ -4,7 +4,7 @@
   "glb": [
     {
       "file": "continuum-c1-assembly.glb",
-      "bytes": 2044232,
+      "bytes": 2046148,
       "meshes": 143,
       "nodes": 176,
       "materials": 143,
@@ -12,7 +12,7 @@
     },
     {
       "file": "continuum-c1-exploded.glb",
-      "bytes": 2045992,
+      "bytes": 2047908,
       "meshes": 143,
       "nodes": 176,
       "materials": 143,
@@ -52,5 +52,13 @@
       118,
       196.7
     ]
+  },
+  "englishEdition": {
+    "checked": "2026-11-12",
+    "componentRecordsMatched": 30,
+    "viewerModesChecked": 5,
+    "dataPathStepsChecked": 6,
+    "externalViewerRequests": 0,
+    "geometryBuffersUnchanged": true
   }
 }

@@ -18,20 +18,20 @@
     #continuum-c1 [hidden]{display:none!important}
     @media(max-width:520px){#continuum-c1 .c1-scene{height:430px}#continuum-c1 .c1-field{min-width:125px}#continuum-c1 .c1-head{padding-right:90px}}
   </style>
-  <div class="c1-head"><strong>续存 C1 · CONTINUUM</strong><span class="text-small text-muted">三维工业概念 / v0.1 / mm</span></div>
+  <div class="c1-head"><strong>CONTINUUM C1</strong><span class="text-small text-muted">Industrial design concept / v0.1 / mm</span></div>
   <div class="c1-toolbar">
-    <label class="c1-field form-label">观察方式<select id="c1-view" class="form-select"><option value="assembly">整体装配</option><option value="exploded">模块分解</option><option value="xray">外壳透视</option><option value="wear">佩戴关系</option><option value="flow">作用机理</option></select></label>
-    <label class="c1-field form-label">查看部件<select id="c1-part" class="form-select"><option value="all">整个装置</option></select></label>
-    <label id="c1-exp-field" class="c1-field form-label" hidden>分解量 <span id="c1-exp-val" class="tabular-nums">70%</span><input id="c1-explode" class="form-range" type="range" min="0" max="100" value="70"></label>
-    <label id="c1-step-field" class="c1-field form-label" hidden>数据链路<select id="c1-step" class="form-select"><option value="0">1 · 头皮电位采集</option><option value="1">2 · 放大与模数转换</option><option value="2">3 · 时间标记与无线发送</option><option value="3">4 · 加密与本地存储</option><option value="4">5 · 数据同步至云端</option><option value="5">? · 意识状态重建（未实现）</option></select></label>
+    <label class="c1-field form-label">View<select id="c1-view" class="form-select"><option value="assembly">Assembly</option><option value="exploded">Exploded view</option><option value="xray">Transparent housing</option><option value="wear">Headset fit</option><option value="flow">How it works</option></select></label>
+    <label class="c1-field form-label">Inspect a part<select id="c1-part" class="form-select"><option value="all">All parts</option></select></label>
+    <label id="c1-exp-field" class="c1-field form-label" hidden>Exploded spacing <span id="c1-exp-val" class="tabular-nums">70%</span><input id="c1-explode" class="form-range" type="range" min="0" max="100" value="70"></label>
+    <label id="c1-step-field" class="c1-field form-label" hidden>Data path<select id="c1-step" class="form-select"><option value="0">1 · Measure scalp potentials</option><option value="1">2 · Amplify and digitize</option><option value="2">3 · Timestamp and transmit</option><option value="3">4 · Encrypt and store locally</option><option value="4">5 · Sync data to the cloud</option><option value="5">? · Reconstruct consciousness (unimplemented)</option></select></label>
   </div>
-  <div class="c1-scene" id="c1-scene" role="img" aria-label="可旋转的头戴采集装置与桌面存储底座三维模型；支持装配、分解、透视、佩戴和数据流示意。">
+  <div class="c1-scene" id="c1-scene" role="img" aria-label="Rotatable 3D model of a recording headset and storage dock. Explore the assembly, separated parts, transparent housing, fit and data path.">
     <div class="c1-labels" id="c1-labels"></div>
-    <div class="c1-caption text-small text-muted"><span>拖动旋转 · 滚轮缩放 · 点击部件</span><span id="c1-size">头环包络约 240 × 287 × 103 mm</span></div>
+    <div class="c1-caption text-small text-muted"><span>Drag to rotate · Scroll to zoom · Click a part to inspect it</span><span id="c1-size">Headset envelope (X/Y/Z): approx. 225 × 122 × 285 mm</span></div>
   </div>
-  <div id="c1-detail" class="c1-detail" aria-live="polite"><span id="c1-detail-title">开放式头环 + 私有存储底座</span><span id="c1-detail-text" class="text-small text-muted">8 路采集电极 · 2 个参考／偏置接触件 · 可拆电池 · 无线数据链路</span></div>
-  <div class="c1-flow text-small"><span><i class="c1-key"></i>可由现有技术实现的数据链路</span><span><i class="c1-key hyp"></i>未实现的意识重建接口</span></div>
-  <div class="c1-note text-small">结构与器件均为概念布局；不具备意识转移能力，不能直接作为人体使用或量产图纸。</div>
+  <div id="c1-detail" class="c1-detail" aria-live="polite"><span id="c1-detail-title">Open headband and personal storage dock</span><span id="c1-detail-text" class="text-small text-muted">8 sensing electrodes · 2 reference/bias contacts · Removable battery · Wireless link</span></div>
+  <div class="c1-flow text-small"><span><i class="c1-key"></i>Proposed EEG data path</span><span><i class="c1-key hyp"></i>Unimplemented research interface</span></div>
+  <div class="c1-note text-small">Concept layout only. The device cannot transfer consciousness; the model is not a blueprint for human use or production.</div>
 </div>
 <!-- C1_LIBRARIES -->
 <script>
@@ -40,7 +40,7 @@
   const host=document.getElementById('continuum-c1'),stage=host.querySelector('#c1-scene');
   const viewEl=host.querySelector('#c1-view'),partEl=host.querySelector('#c1-part'),stepEl=host.querySelector('#c1-step'),expEl=host.querySelector('#c1-explode');
   const detailTitle=host.querySelector('#c1-detail-title'),detailText=host.querySelector('#c1-detail-text'),labelsEl=host.querySelector('#c1-labels');
-  if(!window.THREE){detailTitle.textContent='三维引擎未加载';detailText.textContent='请打开随模型包提供的离线预览。';return;}
+  if(!window.THREE){detailTitle.textContent='3D engine unavailable';detailText.textContent='Open the offline viewer included in the model package.';return;}
   const T=window.THREE,scene=new T.Scene(),renderer=new T.WebGLRenderer({antialias:true,alpha:true,preserveDrawingBuffer:true});
   renderer.setPixelRatio(Math.min(window.devicePixelRatio||1,2));renderer.outputEncoding=T.sRGBEncoding;renderer.toneMapping=T.ACESFilmicToneMapping;renderer.toneMappingExposure=1.05;renderer.shadowMap.enabled=true;renderer.shadowMap.type=T.PCFSoftShadowMap;stage.prepend(renderer.domElement);
   const camera=new T.PerspectiveCamera(35,1,1,5000);camera.position.set(370,310,455);
@@ -66,12 +66,12 @@
   let flowColor=themeColor('--viz-series-1'),hypColor=themeColor('--viz-series-2');
   function applyTheme(){flowColor=themeColor('--viz-series-1');hypColor=themeColor('--viz-series-2');grid.material.color.copy(themeColor('--border'));fl.material.color.copy(hypColor);if(view==='flow')buildFlow();renderDirty=true;}
   const stepData=[
-    {title:'01 / 电极测量头皮电位差',detail:'接触电极 → 参考电位 → 模拟前端；信号不等同于思想或记忆。',ids:['E01','E02','E03','E04','E05','E06','E07','E08','E09'],labels:[['8 路表面电极',[-65,213,51]],['参考／偏置',[-91,99,-60]]]},
-    {title:'02 / 模拟前端与 ADC',detail:'微弱电信号经过调理与模数转换，形成可记录的数字采样。',ids:['H08','H06'],labels:[['AFE / ADC',[0,145,-135]],['屏蔽线束',[-52,210,0]]]},
-    {title:'03 / 时间标记、缓存与无线传输',detail:'控制器标记时间并发送数据；头戴电池供电，佩戴时不充电。',ids:['H09','H10'],labels:[['控制与无线',[0,153,-132]],['电池',[-114,133,-22]]]},
-    {title:'04 / 接收、加密与本地保存',detail:'底座接收数据，校验并加密，写入可移除存储模块。',ids:['D04','D05'],labels:[['接收／加密',[-44,31,-10]],['本地存储',[66,35,8]]]},
-    {title:'05 / 云端数据同步',detail:'云端保存加密记录与模型文件；传输的是数据，没有实现意识转移。',ids:['D05','D06'],labels:[['云端存储（示意）',[216,193,-77]],['本地副本',[65,39,10]]]},
-    {title:'? / 意识状态重建：尚无已知实现',detail:'虚线表示科学与技术缺口；空白接口不是意识读取芯片。',ids:['D09'],labels:[['未实现：意识状态重建',[216,267,-77]],['空白研究接口',[65,36,-62]]]}
+    {title:'01 / Measure scalp potential differences',detail:'The analog front end measures each scalp contact against a reference. These signals do not encode a record of thoughts or memories.',ids:['E01','E02','E03','E04','E05','E06','E07','E08','E09'],labels:[['8 scalp electrodes',[-65,213,51]],['Reference / bias',[-91,99,-60]]]},
+    {title:'02 / Condition and digitize',detail:'The analog front end conditions the weak electrical signals. The ADC converts them to digital samples.',ids:['H08','H06'],labels:[['AFE / ADC',[0,145,-135]],['Shielded harness',[-52,210,0]]]},
+    {title:'03 / Timestamp, buffer and transmit',detail:'The controller timestamps and buffers samples for wireless transmission. The headset runs on battery power and is not charged while worn.',ids:['H09','H10'],labels:[['Controller / radio',[0,153,-132]],['Battery',[-114,133,-22]]]},
+    {title:'04 / Receive, encrypt and store',detail:'The proposed dock verifies and encrypts incoming data, then writes it to removable storage.',ids:['D04','D05'],labels:[['Receiver / encryption',[-44,31,-10]],['Local storage',[66,35,8]]]},
+    {title:'05 / Sync recordings to the cloud',detail:'The cloud symbol represents storage for encrypted recordings and model files. This transfers data, not consciousness.',ids:['D05','D06'],labels:[['Cloud storage (illustration)',[216,193,-77]],['Local copy',[65,39,10]]]},
+    {title:'? / Reconstruct consciousness: unimplemented',detail:'The dashed line marks an unresolved scientific and engineering question. The empty bay contains no consciousness-reading chip.',ids:['D09'],labels:[['Reconstruction: unimplemented',[216,267,-77]],['Empty research bay',[65,36,-62]]]}
   ];
   model.parts.forEach(p=>{let opt=document.createElement('option');opt.value=p.userData.id;opt.textContent=p.userData.id+' · '+p.userData.name;partEl.appendChild(opt);});
   function clearFlow(){flowGroup.children.slice().forEach(c=>{flowGroup.remove(c);if(c.geometry)c.geometry.dispose();if(c.material)c.material.dispose();});particles=[];flowCurves=[];}
@@ -86,18 +86,18 @@
   function tag(text,pos){let el=document.createElement('span');el.className='c1-tag text-small';el.textContent=text;labelsEl.appendChild(el);markers.push({el,pos:new T.Vector3(...pos)});}
   function updateLabels(){labelsEl.innerHTML='';markers=[];if(view==='flow'){stepData[step].labels.forEach(x=>tag(...x));return;}
     if(selected!=='all'){let g=model.parts.find(x=>x.userData.id===selected),b=new T.Box3().setFromObject(g),p=b.getCenter(new T.Vector3());p.y=b.max.y+12;tag(g.userData.id+' · '+g.userData.name,p.toArray());}
-    else if(view==='exploded'){tag('采集头环',[0,300,0]);tag('存储底座',[0,55,135]);}
-    else if(view==='wear'){tag('接触式电极',[-67,210,48]);tag('头型示意，不代表适配尺寸',[0,20,75]);}
+    else if(view==='exploded'){tag('Recording headset',[0,300,0]);tag('Storage dock',[0,55,135]);}
+    else if(view==='wear'){tag('Contact electrode',[-67,210,48]);tag('Generic head; fit unverified',[0,20,75]);}
   }
   function restoreMaterials(){model.root.traverse(o=>{if(!o.isMesh)return;let m=o.material;m.color.setHex(o.userData.baseColor);m.transparent=false;m.opacity=1;m.depthWrite=true;m.emissiveIntensity=o.userData.baseColor===0x25bcca?.3:0;});}
   function paint(){renderDirty=true;restoreMaterials();let active=view==='flow'?stepData[step].ids:(selected==='all'?[]:[selected]);
     model.parts.forEach(g=>{g.traverse(o=>{if(!o.isMesh)return;let m=o.material;if((view==='xray'||view==='flow')&&o.userData.skin){m.transparent=true;m.opacity=.12;m.depthWrite=false;}if(active.includes(g.userData.id)){m.emissive.copy(step===5&&view==='flow'?hypColor:flowColor);m.emissiveIntensity=.22;}});});
   }
-  function info(){if(view==='flow'){detailTitle.textContent=stepData[step].title;detailText.textContent=stepData[step].detail;return;}if(selected==='all'){detailTitle.textContent='开放式头环 + 私有存储底座';detailText.textContent='8 路采集电极 · 2 个参考／偏置接触件 · 可拆电池 · 无线数据链路';}else{let d=model.parts.find(x=>x.userData.id===selected).userData;detailTitle.textContent=d.id+' / '+d.name+' / '+d.material;detailText.textContent=d.mechanism+' · '+d.size;}}
+  function info(){if(view==='flow'){detailTitle.textContent=stepData[step].title;detailText.textContent=stepData[step].detail;return;}if(selected==='all'){detailTitle.textContent='Open headband and personal storage dock';detailText.textContent='8 sensing electrodes · 2 reference/bias contacts · Removable battery · Wireless link';}else{let d=model.parts.find(x=>x.userData.id===selected).userData;detailTitle.textContent=d.id+' / '+d.name+' / '+d.material;detailText.textContent=d.mechanism+' · '+d.size;}}
   function setView(v,save=true){view=v;viewEl.value=v;head.visible=v==='wear';model.dock.visible=v!=='wear';remote.visible=v==='flow'&&step>=4;future.visible=v==='flow'&&step===5;host.querySelector('#c1-exp-field').hidden=v!=='exploded';host.querySelector('#c1-step-field').hidden=v!=='flow';
     model.parts.forEach(g=>{let e=g.userData.explode;g.position.set(e[0]*(v==='exploded'?explode:0),e[1]*(v==='exploded'?explode:0),e[2]*(v==='exploded'?explode:0));});model.root.updateMatrixWorld(true);
     if(v==='flow'&&step<=2){camera.position.set(390,340,-485);controls.target.set(0,110,-10);}else if(v==='flow'){camera.position.set(400,310,430);controls.target.set(55,115,-20);}else if(v==='exploded'){camera.position.set(420,370,520);controls.target.set(0,135,0);}else{camera.position.set(370,310,455);controls.target.set(0,111,0);}controls.update();
-    paint();info();buildFlow();updateLabels();animationUntil=performance.now()+3600;host.querySelector('#c1-size').textContent=v==='flow'?'箭线为信息流示意，非实测信号':v==='wear'?'头型为示意；接触压力与适配尚未设计':'底座名义平面尺寸 240 × 190 mm · 模型单位 mm';if(save)persist();
+    paint();info();buildFlow();updateLabels();animationUntil=performance.now()+3600;host.querySelector('#c1-size').textContent=v==='flow'?'Lines illustrate data flow, not measured signals':v==='wear'?'Illustrative head only; contact pressure and fit are unspecified':'Nominal dock footprint: 240 × 190 mm · Model units: mm';if(save)persist();
   }
   function select(id,save=true){selected=id;partEl.value=id;if(view==='flow'&&id!=='all'){setView('xray',save);return;}paint();info();updateLabels();if(save)persist();}
   function persist(){if(window.openai&&window.openai.setWidgetState)window.openai.setWidgetState({modelContent:{device:'CONTINUUM C1',view,part:selected,mechanismStep:step},privateContent:{explode}}).catch(()=>{});}

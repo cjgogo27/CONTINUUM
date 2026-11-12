@@ -1,77 +1,48 @@
-续存 C1 / CONTINUUM
-三维工业概念设计 v0.1
-日期：2026-10-24
+CONTINUUM C1
+3D industrial design concept, v0.1
+Design date: October 24, 2026
 
-交付范围
-这是一套带内部组件、分解配置和机理展示的原创三维概念装配。
-它表现的是用于神经信号采集、数字化、通信与存储的设备设计，以及一个明确标为未实现的未来研究接口。
-本设计没有实现意识读取、意识编码、意识转移或意识恢复。未知机理没有被替换成声称可工作的虚构器件。
+SCOPE
+The assembly models a headset and a desktop storage dock, including internal component envelopes, an exploded configuration and an illustrated signal path. Signal acquisition, digitization, wireless transmission and storage are proposed functions. Reading, encoding, transferring and restoring consciousness are not implemented.
 
-文件
-interactive-model.html：离线交互预览，浏览器打开即可；不上传数据，不依赖外部网络。
-continuum-c1-assembly.glb：装配模型，含组件名称、材料与功能元数据。
-continuum-c1-exploded.glb：70%分解量的固定爆炸配置。
-continuum-c1.obj 与 continuum-c1.mtl：OBJ几何与对应材质，二者放在同一文件夹。
-c1-model.js：程序化建模源文件，可调整尺寸、位置、材料与结构。
-components.json：30个逻辑组件的材料建议、作用、名义尺寸、测得包围盒与分解偏移。
-assembly-preview.png、exploded-preview.png：装配与分解预览。
-validation.json：文件结构、坐标和交互检查的结果；不代表工程或医学验证。
+FILES AND UNITS
+Open interactive-model.html locally in a WebGL-capable desktop browser. The viewer is self-contained and does not upload data. The assembly and exploded GLB files include component names and metadata; the exploded configuration uses 70% spacing. The OBJ and MTL must stay in the same folder. The model source is c1-model.js; viewer-source.html is a template, not a standalone app. components.json catalogs all 30 parts. The three preview images show the assembly, exploded layout and data path. validation.json records checks on the digital files and viewer, not on physical hardware.
 
-单位与坐标
-建模源文件和OBJ：毫米。
-GLB：按glTF标准使用米；根节点将毫米模型缩放0.001。
-坐标：X左右，Y向上，+Z为佩戴者前方。
-components.json中的boundsMm顺序为X宽、Y高、Z深，包含该组件所有造型。
-头戴部分测得包围盒约：225.1 × 121.5 × 284.7 mm（X/Y/Z）。
-底座含支架和外露接口的包围盒约：240.0 × 118.0 × 196.7 mm（X/Y/Z）。
-底座壳体名义平面尺寸：240 × 190 mm。
-这些是此版本的设计尺寸，不是经过人体适配或制造验证的尺寸。
+The source, OBJ and catalog use millimeters. The GLBs use meters via a root scale of 0.001. X is left/right, Y is up and +Z points toward the front of the wearer. Catalog boundsMm values give the full width, height and depth (X/Y/Z) of each component. The headset measures approximately 225.1 × 121.5 × 284.7 mm. The dock, including its cradle and exposed ports, measures approximately 240 × 118 × 196.7 mm, with a nominal housing footprint of 240 × 190 mm. None of these dimensions has been validated for fit or manufacture.
 
-部件组织
-H01—H12：头环、软衬、拱梁、双侧导轨、线束、电子舱、AFE/ADC板、控制无线板、电池、调节旋钮和状态条。
-E01—E08：8个信号电极组件。
-E09：参考与偏置接触组件，包含2个表面接触件。
-D01—D09：底座外壳、上盖、支架、接收加密处理板、可移除存储、接口、状态面板、脚垫与未来研究接口占位。
-单个逻辑组件可以由多个网格组成；本版总计143个网格，27992个三角面。
+PART GROUPS
+H01–H12: Headband, liner, crown arch, left and right rails, cable harness, rear enclosure, analog front end/ADC board, controller/radio board, battery pack, adjustment dial and front status strip.
+E01–E08: Eight scalp sensing electrode modules.
+E09: Reference and bias assembly with two surface contacts.
+D01–D09: Lower dock housing, lid, cradle, receiver/encryption board, removable storage, power/network ports, status panel, feet/fasteners and an empty research bay.
+A part may contain more than one mesh. The assembly contains 143 meshes and 27,992 triangles.
 
-作用机理
-1. E01—E08配合E09测量头皮电位差。实际采集能力取决于电极、接触与电路设计。
-2. H06将微弱信号送至H08。模拟前端放大、调理，再由ADC形成数字采样。
-3. H09完成时间标记、缓存和无线发送。H10给头戴侧供电。
-4. D04接收数据，进行校验、加密；D05保存加密记录。
-5. D06使底座具备连接网络的设计位置。云端只代表数据与模型文件的存储服务。
-6. D09仅为空白研究接口占位。全脑状态读取、意识编码和主体连续性没有在模型中实现。
-显示的曲线、粒子和云端图标都是信息流示意，不是物理光束、实测信号或真实远程服务。
+PROPOSED SIGNAL PATH
+1. E01–E08 and E09 provide inputs for measuring scalp potential differences. Performance would depend on the electrodes, contact quality and acquisition electronics.
+2. H06 carries the signals to H08. The analog front end would amplify and condition them; the ADC would convert them to digital samples.
+3. H09 would timestamp, buffer and transmit the samples wirelessly. H10 would power the headset.
+4. D04 would receive, verify and encrypt the data. D05 would hold encrypted recordings.
+5. D06 reserves space for the network connection. The cloud icon represents storage for data and model files.
+6. D09 is an empty bay. No hardware or software in this model implements whole-brain state readout, consciousness encoding or continuity of subjective experience.
+The animated paths and cloud icon illustrate information flow. They are not physical beams, measured signals or a live remote service.
 
-材料建议
-结构外壳：PC-ABS概念；外观打样可改用适合的打印材料，但需重新设计壁厚、方向与连接。
-内部支撑：铝合金概念。
-衬垫和支架接触面：硅胶或泡棉概念。
-表面电极：银/氯化银接触件占位；最终材料、形状和接触压力需专业选型。
-电路板：FR-4占位；芯片封装、连接器和电池均为概念包络，不对应已完成的电路BOM。
+PROPOSED MATERIALS
+Housing: PC-ABS. A different printable material is possible for an appearance prototype, but wall thickness, build orientation and joints would need redesign.
+Internal support: aluminum alloy.
+Headset liner and cradle pads: silicone or foam.
+Electrodes: silver/silver chloride contact placeholders. Final contact materials, geometry and pressure require specialist selection.
+Circuit boards: FR-4 placeholders. Chip packages, connectors and the battery represent space allowances, not components from a completed electrical bill of materials.
 
-如何使用
-在交互预览中选择整体装配、模块分解、外壳透视、佩戴关系或作用机理。
-拖动旋转，滚轮缩放；可从“查看部件”选择组件，也可直接点击几何。
-“作用机理”提供5个数据链路步骤和1个明确标记为未实现的意识重建步骤。
-“佩戴关系”显示半透明通用头型；该头型不是某个真实人的扫描，也不构成人体适配保证。
-GLB可导入支持glTF的三维建模和查看软件。OBJ导入时指定毫米。
-createContinuumC1(THREE)返回root、headset、dock、parts等对象；使用Three.js 0.128.0生成本版。
-修改c1-model.js不会自动修改已导出的GLB，须重新运行生成器并导出。
+VIEWING AND EDITING
+Select Assembly, Exploded view, Transparent housing, Headset fit or How it works. Drag to rotate and scroll to zoom. Inspect a component using the part menu or by clicking its geometry. The data path menu shows five proposed signal-handling steps and a separate, explicitly unimplemented consciousness-reconstruction step. The translucent generic head is not a scan of a real person or evidence of fit.
+Import either GLB into a glTF-compatible viewer or modeling application. Specify millimeters when importing the OBJ. createContinuumC1(THREE) returns root, headset, dock, parts and related objects. This release uses Three.js 0.128.0. Source changes do not automatically update exported files: rebuild the viewer and export the model again.
 
-制作边界
-可用于外观讨论、结构布局沟通和进一步机械设计。
-本包不是STEP/B-rep工程CAD，没有完整的螺柱、开孔、卡扣、装配公差、结构强度、散热、电磁兼容或电气安全设计。
-相邻网格可能重叠；没有执行实体布尔合并，不能据此声称可以直接切片打印或装配。
-没有PCB原理图、布线、电池保护电路、固件、真实加密程序或云端服务。
-不要将自制占位电子舱、电极或电池模块直接接入人体。若开发真实采集原型，应采用成熟采集设备并完成相应工程检查。
-该设计不能用于诊断、治疗或意识转移。
+FABRICATION LIMITS
+Use the model for appearance review, layout discussions and further mechanical design. It is not a STEP/B-rep engineering model. Bosses, openings, snap fits, assembly tolerances, structural strength, cooling, electromagnetic compatibility and electrical safety have not been fully designed. Adjacent meshes can overlap and have not been boolean-unioned. The package is not a ready-to-slice set of parts.
+No PCB schematics, board layout, battery protection circuit, firmware, working encryption software or cloud service is included. Do not connect the placeholder electronics, electrodes or battery to a person. A real acquisition prototype would need appropriate acquisition hardware and engineering review. This design is not for diagnosis, treatment or consciousness transfer.
 
-参考依据
-头皮脑电采集与模块化硬件：OpenBCI文档 https://docs.openbci.com/Cyton/CytonSpecs/
-本次对话已核查的全脑模拟研究边界：Eon技术说明 https://eon.systems/updates/embodied-brain-emulation
-设计与几何为本次对话创建；外观不是上述项目现有产品的复制。
-
-第三方软件
-离线预览内含Three.js 0.128.0、OrbitControls、GLTFExporter与STLExporter。
-Three.js及其示例代码采用MIT许可证，版权归原作者；参见THIRD-PARTY-NOTICES.txt。
+REFERENCES AND CREDITS
+OpenBCI Cyton hardware documentation (scalp EEG and modular acquisition hardware): https://docs.openbci.com/Cyton/CytonSpecs/
+Eon Systems, Embodied Brain Emulation (research context and limits): https://eon.systems/updates/embodied-brain-emulation
+The geometry was created for this project and does not reproduce the appearance of either reference project.
+The offline viewer embeds Three.js 0.128.0, OrbitControls, GLTFExporter and STLExporter. See THIRD-PARTY-NOTICES.txt for the MIT license and upstream credits.

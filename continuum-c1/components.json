@@ -7,16 +7,16 @@
   "components": [
     {
       "id": "H01",
-      "name": "主头环",
-      "material": "PC-ABS外壳／内部铝合金骨架",
-      "mechanism": "提供电极位置与佩戴支撑；不参与意识读取",
-      "size": "外包络 204 × 240 × 16 mm",
+      "name": "Headband",
+      "material": "PC-ABS shell with an aluminum alloy frame",
+      "mechanism": "Holds the electrodes in position and supports the headset. It does not read consciousness.",
+      "size": "Outer envelope: 204 × 240 × 16 mm",
       "explode": [
         0,
         8,
         0
       ],
-      "status": "现有技术可支撑的功能概念",
+      "status": "Design concept based on existing technology",
       "boundsMm": [
         206,
         16,
@@ -25,16 +25,16 @@
     },
     {
       "id": "H02",
-      "name": "可拆软衬",
-      "material": "成型硅胶／闭孔泡棉",
-      "mechanism": "分散压力；接触皮肤部分需另行完成适配与材料验证",
-      "size": "环形衬垫，名义厚度 5 mm",
+      "name": "Removable liner",
+      "material": "Molded silicone or closed-cell foam",
+      "mechanism": "Distributes pressure. Skin-contact materials and fit still need validation.",
+      "size": "Ring-shaped pad; nominal thickness: 5 mm",
       "explode": [
         0,
         -18,
         0
       ],
-      "status": "现有技术可支撑的功能概念",
+      "status": "Design concept based on existing technology",
       "boundsMm": [
         182,
         10,
@@ -43,16 +43,16 @@
     },
     {
       "id": "H03",
-      "name": "顶部主梁",
-      "material": "PC-ABS，名义壁厚 4 mm",
-      "mechanism": "连接前后头环；内部预留线束空间",
-      "size": "宽 22 mm；拱顶约 217 mm",
+      "name": "Crown arch",
+      "material": "PC-ABS; nominal wall thickness: 4 mm",
+      "mechanism": "Connects the front and rear of the headband and leaves space for wiring.",
+      "size": "Width: 22 mm; arch apex at approximately 217 mm",
       "explode": [
         0,
         72,
         0
       ],
-      "status": "现有技术可支撑的功能概念",
+      "status": "Design concept based on existing technology",
       "boundsMm": [
         22,
         92.5,
@@ -61,16 +61,16 @@
     },
     {
       "id": "H04",
-      "name": "左电极导轨",
-      "material": "PC-ABS／弹性电极支座",
-      "mechanism": "固定四个电极模块；弧线为概念尺寸，尚未进行头型适配",
-      "size": "宽 12 mm；中心偏置 ±52 mm",
+      "name": "Left electrode rail",
+      "material": "PC-ABS with compliant electrode mounts",
+      "mechanism": "Holds four electrodes. The rail curvature has not been validated for fit.",
+      "size": "Width: 12 mm; centerline offset: ±52 mm",
       "explode": [
         -40,
         45,
         0
       ],
-      "status": "现有技术可支撑的功能概念",
+      "status": "Design concept based on existing technology",
       "boundsMm": [
         12,
         74,
@@ -79,16 +79,16 @@
     },
     {
       "id": "H05",
-      "name": "右电极导轨",
-      "material": "PC-ABS／弹性电极支座",
-      "mechanism": "固定四个电极模块；弧线为概念尺寸，尚未进行头型适配",
-      "size": "宽 12 mm；中心偏置 ±52 mm",
+      "name": "Right electrode rail",
+      "material": "PC-ABS with compliant electrode mounts",
+      "mechanism": "Holds four electrodes. The rail curvature has not been validated for fit.",
+      "size": "Width: 12 mm; centerline offset: ±52 mm",
       "explode": [
         40,
         45,
         0
       ],
-      "status": "现有技术可支撑的功能概念",
+      "status": "Design concept based on existing technology",
       "boundsMm": [
         12,
         74,
@@ -97,16 +97,16 @@
     },
     {
       "id": "E01",
-      "name": "左侧采集电极 1",
-      "material": "银／氯化银接触件占位；弹性绝缘支座",
-      "mechanism": "记录局部头皮电位差；不能读取单个神经元或完整记忆",
-      "size": "模块直径 23 mm；行程与接触压力待设计",
+      "name": "Left sensing electrode 1",
+      "material": "Ag/AgCl contact placeholder with a compliant insulating mount",
+      "mechanism": "Intended to measure local scalp potential differences. It cannot read individual neurons or complete memories.",
+      "size": "Module diameter: 23 mm; travel and contact pressure not yet specified",
       "explode": [
         -25,
         92,
         21.599999999999998
       ],
-      "status": "现有技术可支撑的功能概念",
+      "status": "Design concept based on existing technology",
       "boundsMm": [
         26.6,
         25.9,
@@ -115,16 +115,16 @@
     },
     {
       "id": "E02",
-      "name": "左侧采集电极 2",
-      "material": "银／氯化银接触件占位；弹性绝缘支座",
-      "mechanism": "记录局部头皮电位差；不能读取单个神经元或完整记忆",
-      "size": "模块直径 23 mm；行程与接触压力待设计",
+      "name": "Left sensing electrode 2",
+      "material": "Ag/AgCl contact placeholder with a compliant insulating mount",
+      "mechanism": "Intended to measure local scalp potential differences. It cannot read individual neurons or complete memories.",
+      "size": "Module diameter: 23 mm; travel and contact pressure not yet specified",
       "explode": [
         -25,
         97,
         7.8
       ],
-      "status": "现有技术可支撑的功能概念",
+      "status": "Design concept based on existing technology",
       "boundsMm": [
         25.5,
         22.1,
@@ -133,16 +133,16 @@
     },
     {
       "id": "E03",
-      "name": "左侧采集电极 3",
-      "material": "银／氯化银接触件占位；弹性绝缘支座",
-      "mechanism": "记录局部头皮电位差；不能读取单个神经元或完整记忆",
-      "size": "模块直径 23 mm；行程与接触压力待设计",
+      "name": "Left sensing electrode 3",
+      "material": "Ag/AgCl contact placeholder with a compliant insulating mount",
+      "mechanism": "Intended to measure local scalp potential differences. It cannot read individual neurons or complete memories.",
+      "size": "Module diameter: 23 mm; travel and contact pressure not yet specified",
       "explode": [
         -25,
         102,
         -7.8
       ],
-      "status": "现有技术可支撑的功能概念",
+      "status": "Design concept based on existing technology",
       "boundsMm": [
         25.5,
         22.1,
@@ -151,16 +151,16 @@
     },
     {
       "id": "E04",
-      "name": "左侧采集电极 4",
-      "material": "银／氯化银接触件占位；弹性绝缘支座",
-      "mechanism": "记录局部头皮电位差；不能读取单个神经元或完整记忆",
-      "size": "模块直径 23 mm；行程与接触压力待设计",
+      "name": "Left sensing electrode 4",
+      "material": "Ag/AgCl contact placeholder with a compliant insulating mount",
+      "mechanism": "Intended to measure local scalp potential differences. It cannot read individual neurons or complete memories.",
+      "size": "Module diameter: 23 mm; travel and contact pressure not yet specified",
       "explode": [
         -25,
         107,
         -21.599999999999998
       ],
-      "status": "现有技术可支撑的功能概念",
+      "status": "Design concept based on existing technology",
       "boundsMm": [
         26.6,
         25.9,
@@ -169,16 +169,16 @@
     },
     {
       "id": "E05",
-      "name": "右侧采集电极 1",
-      "material": "银／氯化银接触件占位；弹性绝缘支座",
-      "mechanism": "记录局部头皮电位差；不能读取单个神经元或完整记忆",
-      "size": "模块直径 23 mm；行程与接触压力待设计",
+      "name": "Right sensing electrode 1",
+      "material": "Ag/AgCl contact placeholder with a compliant insulating mount",
+      "mechanism": "Intended to measure local scalp potential differences. It cannot read individual neurons or complete memories.",
+      "size": "Module diameter: 23 mm; travel and contact pressure not yet specified",
       "explode": [
         25,
         92,
         21.599999999999998
       ],
-      "status": "现有技术可支撑的功能概念",
+      "status": "Design concept based on existing technology",
       "boundsMm": [
         26.6,
         25.9,
@@ -187,16 +187,16 @@
     },
     {
       "id": "E06",
-      "name": "右侧采集电极 2",
-      "material": "银／氯化银接触件占位；弹性绝缘支座",
-      "mechanism": "记录局部头皮电位差；不能读取单个神经元或完整记忆",
-      "size": "模块直径 23 mm；行程与接触压力待设计",
+      "name": "Right sensing electrode 2",
+      "material": "Ag/AgCl contact placeholder with a compliant insulating mount",
+      "mechanism": "Intended to measure local scalp potential differences. It cannot read individual neurons or complete memories.",
+      "size": "Module diameter: 23 mm; travel and contact pressure not yet specified",
       "explode": [
         25,
         97,
         7.8
       ],
-      "status": "现有技术可支撑的功能概念",
+      "status": "Design concept based on existing technology",
       "boundsMm": [
         25.5,
         22.1,
@@ -205,16 +205,16 @@
     },
     {
       "id": "E07",
-      "name": "右侧采集电极 3",
-      "material": "银／氯化银接触件占位；弹性绝缘支座",
-      "mechanism": "记录局部头皮电位差；不能读取单个神经元或完整记忆",
-      "size": "模块直径 23 mm；行程与接触压力待设计",
+      "name": "Right sensing electrode 3",
+      "material": "Ag/AgCl contact placeholder with a compliant insulating mount",
+      "mechanism": "Intended to measure local scalp potential differences. It cannot read individual neurons or complete memories.",
+      "size": "Module diameter: 23 mm; travel and contact pressure not yet specified",
       "explode": [
         25,
         102,
         -7.8
       ],
-      "status": "现有技术可支撑的功能概念",
+      "status": "Design concept based on existing technology",
       "boundsMm": [
         25.5,
         22.1,
@@ -223,16 +223,16 @@
     },
     {
       "id": "E08",
-      "name": "右侧采集电极 4",
-      "material": "银／氯化银接触件占位；弹性绝缘支座",
-      "mechanism": "记录局部头皮电位差；不能读取单个神经元或完整记忆",
-      "size": "模块直径 23 mm；行程与接触压力待设计",
+      "name": "Right sensing electrode 4",
+      "material": "Ag/AgCl contact placeholder with a compliant insulating mount",
+      "mechanism": "Intended to measure local scalp potential differences. It cannot read individual neurons or complete memories.",
+      "size": "Module diameter: 23 mm; travel and contact pressure not yet specified",
       "explode": [
         25,
         107,
         -21.599999999999998
       ],
-      "status": "现有技术可支撑的功能概念",
+      "status": "Design concept based on existing technology",
       "boundsMm": [
         26.6,
         25.9,
@@ -241,16 +241,16 @@
     },
     {
       "id": "E09",
-      "name": "参考与偏置接触组件",
-      "material": "表面电极／硅胶绝缘连接件",
-      "mechanism": "提供参考电位和采集系统偏置连接；不是向脑内写入信息",
-      "size": "2 个接触件，直径 12 mm",
+      "name": "Reference and bias contacts",
+      "material": "Surface electrodes with insulated silicone fittings",
+      "mechanism": "Provide a reference potential and a bias connection for acquisition. They do not write information to the brain.",
+      "size": "Two contacts, each 12 mm in diameter",
       "explode": [
         0,
         -40,
         -20
       ],
-      "status": "现有技术可支撑的功能概念",
+      "status": "Design concept based on existing technology",
       "boundsMm": [
         185.6,
         30.7,
@@ -259,16 +259,16 @@
     },
     {
       "id": "H06",
-      "name": "低噪声信号线束",
-      "material": "屏蔽导线／柔性线路占位",
-      "mechanism": "将电极信号接入模拟前端；与无线传输链路分离",
-      "size": "8 路信号＋参考／偏置",
+      "name": "Signal cable harness",
+      "material": "Shielded wires or flexible circuit placeholder",
+      "mechanism": "Routes eight electrode signals to the analog front end, upstream of the wireless link.",
+      "size": "8 signal channels plus reference and bias",
       "explode": [
         0,
         40,
         -25
       ],
-      "status": "现有技术可支撑的功能概念",
+      "status": "Design concept based on existing technology",
       "boundsMm": [
         108.1,
         65.7,
@@ -277,16 +277,16 @@
     },
     {
       "id": "H07",
-      "name": "后部电子舱",
-      "material": "PC-ABS外壳，名义壁厚 2.5 mm",
-      "mechanism": "收纳模拟前端与数字控制板；壳体不产生神经读取能力",
+      "name": "Rear electronics enclosure",
+      "material": "PC-ABS shell; nominal wall thickness: 2.5 mm",
+      "mechanism": "Houses the analog front end and digital control board. The enclosure itself has no sensing function.",
       "size": "78 × 34 × 35 mm",
       "explode": [
         0,
         25,
         -75
       ],
-      "status": "现有技术可支撑的功能概念",
+      "status": "Design concept based on existing technology",
       "boundsMm": [
         78,
         34,
@@ -295,16 +295,16 @@
     },
     {
       "id": "H08",
-      "name": "AFE／ADC采集板",
-      "material": "FR-4板／模拟前端与ADC占位封装",
-      "mechanism": "电位差 → 放大与调理 → 模数转换；器件位置仅为占位",
-      "size": "板外形 64 × 24 mm",
+      "name": "Analog front end and ADC board",
+      "material": "FR-4 board with placeholder analog front end and ADC packages",
+      "mechanism": "Amplifies and conditions the potential difference, then converts it to digital samples. Component locations are provisional.",
+      "size": "Board outline: 64 × 24 mm",
       "explode": [
         0,
         55,
         -52
       ],
-      "status": "现有技术可支撑的功能概念",
+      "status": "Design concept based on existing technology",
       "boundsMm": [
         64,
         4.7,
@@ -313,16 +313,16 @@
     },
     {
       "id": "H09",
-      "name": "控制与无线板",
-      "material": "FR-4板／MCU、缓存与无线芯片占位",
-      "mechanism": "加时间标记、缓存、打包；无线发送到接收端",
-      "size": "板外形 55 × 22 mm",
+      "name": "Controller and radio board",
+      "material": "FR-4 board with placeholder MCU, buffer and radio packages",
+      "mechanism": "Timestamps, buffers and packages samples for wireless transmission to the dock.",
+      "size": "Board outline: 55 × 22 mm",
       "explode": [
         0,
         90,
         -73
       ],
-      "status": "现有技术可支撑的功能概念",
+      "status": "Design concept based on existing technology",
       "boundsMm": [
         55.8,
         6.5,
@@ -331,16 +331,16 @@
     },
     {
       "id": "H10",
-      "name": "可拆电池组件",
-      "material": "绝缘电池盒／受保护电池包占位",
-      "mechanism": "只为采集与通信供电；佩戴时不充电",
-      "size": "外包络 24 × 27 × 64 mm",
+      "name": "Removable battery pack",
+      "material": "Insulated housing with a placeholder protected battery pack",
+      "mechanism": "Powers acquisition and communication only. The design excludes charging while worn.",
+      "size": "Outer envelope: 24 × 27 × 64 mm",
       "explode": [
         -70,
         0,
         0
       ],
-      "status": "现有技术可支撑的功能概念",
+      "status": "Design concept based on existing technology",
       "boundsMm": [
         26.1,
         27,
@@ -349,16 +349,16 @@
     },
     {
       "id": "H11",
-      "name": "后部松紧调节",
-      "material": "聚合物旋钮／机械调节占位",
-      "mechanism": "提供佩戴调节意图；齿轮、带长与受力结构尚未工程化",
-      "size": "旋钮直径 29 mm",
+      "name": "Rear adjustment dial",
+      "material": "Polymer knob with a placeholder adjustment mechanism",
+      "mechanism": "Illustrates the fit adjustment. The gearing, strap length and load-bearing parts are not engineered.",
+      "size": "Dial diameter: 29 mm",
       "explode": [
         0,
         0,
         -95
       ],
-      "status": "现有技术可支撑的功能概念",
+      "status": "Design concept based on existing technology",
       "boundsMm": [
         29,
         29,
@@ -367,16 +367,16 @@
     },
     {
       "id": "H12",
-      "name": "前部状态条",
-      "material": "PC透光件／LED板占位",
-      "mechanism": "显示接触、采集与传输状态；不显示“意识上传进度”",
+      "name": "Front status strip",
+      "material": "Translucent polycarbonate with a placeholder LED board",
+      "mechanism": "Indicates contact, recording and transmission status. It does not indicate consciousness upload progress.",
       "size": "54 × 15 × 8 mm",
       "explode": [
         0,
         0,
         50
       ],
-      "status": "现有技术可支撑的功能概念",
+      "status": "Design concept based on existing technology",
       "boundsMm": [
         54,
         15,
@@ -385,16 +385,16 @@
     },
     {
       "id": "D01",
-      "name": "底座下壳",
-      "material": "PC-ABS／铝质承重底板",
-      "mechanism": "固定存储与接收组件；与头部设备仅通过无线通信",
+      "name": "Lower dock housing",
+      "material": "PC-ABS shell and load-bearing aluminum baseplate",
+      "mechanism": "Supports the storage and receiver modules. The headset communicates with the dock wirelessly.",
       "size": "240 × 190 × 44 mm",
       "explode": [
         0,
         -12,
         0
       ],
-      "status": "现有技术可支撑的功能概念",
+      "status": "Design concept based on existing technology",
       "boundsMm": [
         240,
         40,
@@ -403,16 +403,16 @@
     },
     {
       "id": "D02",
-      "name": "可拆底座上盖",
-      "material": "PC-ABS，名义厚度 3 mm",
-      "mechanism": "覆盖存储底座；爆炸视图可查看内部概念布局",
+      "name": "Removable dock lid",
+      "material": "PC-ABS; nominal thickness: 3 mm",
+      "mechanism": "Covers the dock. The exploded view reveals the proposed internal layout.",
       "size": "240 × 190 × 3 mm",
       "explode": [
         0,
         45,
         0
       ],
-      "status": "现有技术可支撑的功能概念",
+      "status": "Design concept based on existing technology",
       "boundsMm": [
         240,
         3,
@@ -421,16 +421,16 @@
     },
     {
       "id": "D03",
-      "name": "停放支架与软垫",
-      "material": "PC-ABS／硅胶软垫",
-      "mechanism": "承托闲置头环；停放支架不连接人体电极",
-      "size": "支撑高度 77 mm",
+      "name": "Headset cradle and pads",
+      "material": "PC-ABS with silicone pads",
+      "mechanism": "Supports the headset when parked. The cradle does not connect to the electrodes.",
+      "size": "Support height: 77 mm",
       "explode": [
         0,
         20,
         0
       ],
-      "status": "现有技术可支撑的功能概念",
+      "status": "Design concept based on existing technology",
       "boundsMm": [
         171,
         71.5,
@@ -439,16 +439,16 @@
     },
     {
       "id": "D04",
-      "name": "接收与加密处理板",
-      "material": "FR-4／处理器与安全芯片占位",
-      "mechanism": "接收数据 → 校验 → 加密 → 本地存储；所需软件尚未实现",
+      "name": "Receiver and encryption board",
+      "material": "FR-4 with placeholder processor and security chip",
+      "mechanism": "Receives, verifies and encrypts data before local storage. This software has not been implemented.",
       "size": "96 × 70 mm",
       "explode": [
         -72,
         80,
         0
       ],
-      "status": "现有技术可支撑的功能概念",
+      "status": "Design concept based on existing technology",
       "boundsMm": [
         96,
         13.3,
@@ -457,16 +457,16 @@
     },
     {
       "id": "D05",
-      "name": "可移除存储模块",
-      "material": "M.2 SSD外形占位／金属保护托架",
-      "mechanism": "保存加密脑电与资料；不是意识存储介质",
-      "size": "托架 34 × 92 × 9 mm",
+      "name": "Removable storage module",
+      "material": "M.2 SSD form-factor placeholder with a metal carrier",
+      "mechanism": "Intended to store encrypted EEG recordings and related files. It does not store consciousness.",
+      "size": "Carrier: 34 × 92 × 9 mm",
       "explode": [
         85,
         65,
         45
       ],
-      "status": "现有技术可支撑的功能概念",
+      "status": "Design concept based on existing technology",
       "boundsMm": [
         43,
         10.5,
@@ -475,16 +475,16 @@
     },
     {
       "id": "D06",
-      "name": "电源与网络接口",
-      "material": "绝缘接口座／连接器占位",
-      "mechanism": "为底座供电并接入网络；具体连接器型号待工程选型",
-      "size": "接口布置于底座后侧",
+      "name": "Power and network ports",
+      "material": "Insulated mounts with placeholder connectors",
+      "mechanism": "Provide dock power and network access. Connector types have not been selected.",
+      "size": "Ports are at the rear of the dock",
       "explode": [
         0,
         35,
         -90
       ],
-      "status": "现有技术可支撑的功能概念",
+      "status": "Design concept based on existing technology",
       "boundsMm": [
         83.5,
         14,
@@ -493,16 +493,16 @@
     },
     {
       "id": "D07",
-      "name": "同步状态面板",
-      "material": "透光盖板／LED或屏幕占位",
-      "mechanism": "显示采集数据同步状态；动画为机理示意",
+      "name": "Sync status panel",
+      "material": "Translucent cover with a placeholder LED array or display",
+      "mechanism": "Indicates recording synchronization status. The animation illustrates the proposed data path.",
       "size": "88 × 15 × 3 mm",
       "explode": [
         0,
         0,
         45
       ],
-      "status": "现有技术可支撑的功能概念",
+      "status": "Design concept based on existing technology",
       "boundsMm": [
         88,
         15,
@@ -511,16 +511,16 @@
     },
     {
       "id": "D08",
-      "name": "防滑脚垫与紧固件",
-      "material": "硅胶脚垫／M3紧固件占位",
-      "mechanism": "稳定桌面设备；孔位与公差尚未完成生产设计",
-      "size": "4 个脚垫，直径 18 mm",
+      "name": "Non-slip feet and fasteners",
+      "material": "Silicone feet with placeholder M3 fasteners",
+      "mechanism": "Stabilize the dock on a desk. Hole positions and tolerances are not ready for production.",
+      "size": "Four feet, each 18 mm in diameter",
       "explode": [
         0,
         -30,
         0
       ],
-      "status": "现有技术可支撑的功能概念",
+      "status": "Design concept based on existing technology",
       "boundsMm": [
         204,
         44.6,
@@ -529,16 +529,16 @@
     },
     {
       "id": "D09",
-      "name": "未来研究接口占位",
-      "material": "空白绝缘盖板；没有意识读取器件",
-      "mechanism": "仅预留扩展空间；全脑状态读取、意识编码与主体连续性没有已知实现",
-      "size": "占位空间 42 × 30 × 15 mm",
+      "name": "Reserved research bay",
+      "material": "Blank insulating cover; no consciousness-reading hardware",
+      "mechanism": "Reserves space for future work. The design provides no method for reading a whole-brain state, encoding consciousness or preserving subjective continuity.",
+      "size": "Reserved space: 42 × 30 × 15 mm",
       "explode": [
         65,
         100,
         -60
       ],
-      "status": "未实现的研究接口，不具备意识上传功能",
+      "status": "Unimplemented research interface; no consciousness upload function",
       "boundsMm": [
         42,
         17.5,
